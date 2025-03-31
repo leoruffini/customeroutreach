@@ -1,0 +1,125 @@
+lead_profiling_task:
+  description: >
+    Conduct an in-depth analysis of {lead_name},
+    a company in the {industry} sector
+    that could benefit from InfoPraca.pl's recruitment solutions.
+    Utilize all available data sources
+    to compile a detailed profile,
+    focusing on key decision-makers, recent business
+    developments, and potential needs, with special attention to
+    their current hiring processes and recruitment challenges,
+    and potential benefits from our AI-powered platform and Jobby assistant.
+    Research their recent growth, hiring patterns, and any public
+    statements about recruitment needs or digital transformation initiatives.
+    This task is crucial for tailoring our engagement strategy effectively.
+    Don't make assumptions and only use information you're absolutely sure about.
+  expected_output: >
+    A comprehensive report on {lead_name},
+    including their current recruitment processes,
+    hiring challenges, and growth trajectory.
+    Highlight specific ways InfoPraca.pl's platform and Jobby
+    could improve their hiring efficiency.
+    Include potential ROI in terms of time saved and quality of hire.
+    Suggest personalized engagement strategies focusing on
+    our AI-powered solutions and market leadership in Poland.
+
+personalized_outreach_task:
+  description: >
+    Using the insights gathered from
+    the lead profiling report on {lead_name},
+    craft a personalized outreach campaign
+    aimed at {key_decision_maker},
+    the {position} of {lead_name}.
+    Mention some of their current recruitment processes and challenges
+    to show that you took the time to understand their business and then
+    focus on how InfoPraca.pl's AI-powered
+    recruitment platform can support their objectives.
+    and how our recruitment solutions can support their goals.
+    Your communication must resonate
+    with {lead_name}'s company culture and values,
+    demonstrating a deep understanding of
+    their business and needs.
+    Emphasize our proven track record in the Polish market since 2005
+    and how our AI solutions can streamline their hiring process.
+    Address specific recruitment challenges identified in the profile.
+    Reference any recent hiring initiatives
+    or digital transformation projects at {lead_name} that could benefit
+    from our solutions. 
+    Don't make assumptions and only use information
+    you're absolutely sure about.
+  expected_output: >
+    A series of personalized email drafts tailored to {lead_name},
+    specifically targeting {key_decision_maker}. Each draft should:
+    - Acknowledge their current recruitment processes and challenges
+    - Highlight specific benefits of InfoPraca.pl's AI-powered platform
+    - Demonstrate ROI through time savings and improved hire quality
+    - Reference relevant success stories from similar Polish companies
+    - Include clear next steps for implementing our recruitment solutions
+    The tone should be professional yet approachable, emphasizing our
+    understanding of the Polish market and recruitment landscape.
+
+outreach_quality_task:
+  description: >
+    Thoroughly evaluate the proposed outreach message for {lead_name}
+    to ensure it meets our high standards for authentic, valuable communication.
+    Specifically assess:
+    - Level of personalization and research demonstrated
+    - Authenticity of tone and messaging
+    - Absence of generic sales language or empty promises
+    - Clear value proposition tailored to {lead_name}'s needs
+    - Natural, human-like writing style free of AI-generated patterns
+    - Cultural appropriateness for Polish business context
+    - Concrete examples and specifics vs vague statements
+    - Respect for recipient's time and position
+    Flag any instances of:
+    - Generic templates or obvious AI generation
+    - Manipulative or pushy sales tactics
+    - Unsubstantiated claims or promises
+    - Fluff or unnecessary jargon
+    - Impersonal or mass-market language
+    Only approve messages that demonstrate genuine research,
+    provide tangible value, and would resonate with a busy Polish executive.
+    Reject anything that feels automated, generic, or sales-heavy.
+  expected_output: >
+    A detailed quality assessment of the outreach message including:
+    - Overall approval/rejection recommendation
+    - Specific strengths and weaknesses identified
+    - Areas requiring improvement or revision
+    - Suggestions for making the message more authentic and valuable
+    - Analysis of tone, personalization, and cultural fit
+    The assessment should be ruthlessly honest, prioritizing
+    message quality over speed of sending. Better to delay
+    than to send a subpar communication.
+
+finalize_outreach_task:
+  description: >
+    Using the quality assessment feedback provided by the Quality Agent,
+    revise and enhance the outreach message for {lead_name} and {key_decision_maker},
+    the {position}. This is your opportunity to refine the communication 
+    based on professional feedback to create the absolute best possible outreach.
+    
+    Focus on:
+    - Addressing all weaknesses identified in the quality assessment
+    - Enhancing strengths that were already noted
+    - Implementing specific improvement suggestions
+    - Maintaining authenticity while increasing personalization
+    - Ensuring cultural appropriateness for the Polish business context
+    - Strengthening the value proposition specific to {lead_name}'s needs
+    - Making the writing style more natural and human-like
+    
+    Your goal is to transform a good outreach draft into an exceptional one 
+    that demonstrates deep understanding of the lead's business challenges 
+    and presents InfoPraca.pl as the ideal solution partner.
+  expected_output: >
+    A final, polished outreach message to {key_decision_maker} that:
+    - Has addressed all quality feedback concerns
+    - Demonstrates exceptional research and personalization
+    - Presents a compelling, tailored value proposition
+    - Sounds completely natural and authentically human
+    - Clearly articulates next steps for engagement
+    - Is ready to be sent with confidence to a C-level Polish executive
+    
+    This message should represent the absolute highest quality outreach 
+    possible from InfoPraca.pl and be free of any issues that might 
+    diminish its effectiveness or authenticity.
+  
