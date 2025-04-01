@@ -63,7 +63,7 @@ Tool outputs are formatted for better readability:
 The demo generates several types of output files:
 
 1. **Task Outputs**: Stored in the `outputs_TIMESTAMP/` directory
-   - `lead_profile.md` - Company research by the Sales Rep
+   - `lead_profile.md` - Company research by the Intelligence Analyst
    - `initial_outreach.md` - Initial email draft by Lead Sales Rep
    - `qa_report.md` - Quality assessment by Quality Agent
    - `final_outreach.md` - Final polished email
@@ -93,7 +93,7 @@ You can customize aspects of the demo in the following files:
 
 The demo showcases a multi-agent system with:
 
-- **Agents**: Sales Rep, Lead Sales Rep, Quality Control
+- **Agents**: Intelligence Analyst, Lead Sales Rep, Quality Control
 - **Tasks**: Lead profiling, outreach creation, quality assessment, finalization
 - **Tools**: Directory reading, file reading, search, sentiment analysis
 - **Process**: Sequential workflow with possible hierarchical subtask delegation

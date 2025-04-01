@@ -13,12 +13,13 @@ from datetime import datetime
 
 console = Console()
 
+
 def main():
     parser = argparse.ArgumentParser(description="Run CustomerOutreach Demo")
     parser.add_argument("--company", default="Manpower Group Poland", help="Target company name")
-    parser.add_argument("--industry", default="HR and Recruitment", help="Company industry")
-    parser.add_argument("--decision-maker", default="Tomasz Walenczak", help="Key decision maker")
-    parser.add_argument("--position", default="Country Manager", help="Decision maker position")
+    parser.add_argument("--industry", default="Staffing and Recruiting", help="Company industry")
+    parser.add_argument("--decision-maker", default="Paweł Binkowski", help="Key decision maker")
+    parser.add_argument("--position", default="Marketing & Innovation Director", help="Decision maker position")
     parser.add_argument("--verbose", action="store_true", help="Display more verbose output")
     parser.add_argument("--educational", action="store_true", help="Show educational explanations")
     args = parser.parse_args()
@@ -87,16 +88,16 @@ def main():
         architecture = """
         ┌────────────────────┐      ┌────────────────────┐      ┌────────────────────┐
         │                    │      │                    │      │                    │
-        │  Sales Rep Agent   │──→───│ Lead Sales Rep     │──→───│ Quality Control    │
+        │Intelligence Analyst│──→───│ Lead Sales Rep     │──→───│ Quality Control    │
         │  [Research]        │      │ [Content Creation] │      │ [Evaluation]       │
         │                    │      │                    │      │                    │
         └────────────────────┘      └────────────────────┘      └────────────────────┘
                                             │                            │
                                             │                            │
                                             ▼                            │
-                                    ┌────────────────────┐              │
-                                    │                    │              │
-                                    │ Lead Sales Rep     │◀─────────────┘
+                                    ┌────────────────────┐               │
+                                    │                    │               │
+                                    │ Lead Sales Rep     │◀──────────────┘
                                     │ [Refinement]       │
                                     │                    │
                                     └────────────────────┘
@@ -110,7 +111,7 @@ def main():
         roles_table.add_column("Expertise", style="yellow")
         
         roles_table.add_row(
-            "Sales Representative", 
+            "Intelligence Analyst", 
             "Research & Analysis", 
             "Finding company information, analyzing needs, identifying opportunities"
         )

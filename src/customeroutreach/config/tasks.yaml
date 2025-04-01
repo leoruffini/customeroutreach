@@ -44,19 +44,25 @@ personalized_outreach_task:
     Address specific recruitment challenges identified in the profile.
     Reference any recent hiring initiatives
     or digital transformation projects at {lead_name} that could benefit
-    from our solutions. 
+    from our solutions.
+    Whenever possible, use figures and numbers from the lead profiling report to make your case.
     Don't make assumptions and only use information
     you're absolutely sure about.
   expected_output: >
-    A series of personalized email drafts tailored to {lead_name},
-    specifically targeting {key_decision_maker}. Each draft should:
-    - Acknowledge their current recruitment processes and challenges
+    A  personalized email draft tailored to {lead_name},
+    specifically targeting {key_decision_maker}. The email should:
+    - Acknowledge their current recruitment processes and challenges, 
+    including any specific challenges or needs that you identified in the lead profiling report,
+    including figures and numbers if possible.
     - Highlight specific benefits of InfoPraca.pl's AI-powered platform
     - Demonstrate ROI through time savings and improved hire quality
     - Reference relevant success stories from similar Polish companies
     - Include clear next steps for implementing our recruitment solutions
-    The tone should be professional yet approachable, emphasizing our
-    understanding of the Polish market and recruitment landscape.
+    - Sound like a person — not a pitch.
+    - Reference real facts, real challenges, and offer real value.
+    - Avoid buzzwordors, empty phrases and clichés.
+    - Be authentic and genuine. Be bold. Be original.
+    - Be concise and to the point.
 
 outreach_quality_task:
   description: >
@@ -103,10 +109,9 @@ finalize_outreach_task:
     - Enhancing strengths that were already noted
     - Implementing specific improvement suggestions
     - Maintaining authenticity while increasing personalization
-    - Ensuring cultural appropriateness for the Polish business context
     - Strengthening the value proposition specific to {lead_name}'s needs
     - Making the writing style more natural and human-like
-    
+    - Using figures and numbers from the lead profiling report to make your case.
     Your goal is to transform a good outreach draft into an exceptional one 
     that demonstrates deep understanding of the lead's business challenges 
     and presents InfoPraca.pl as the ideal solution partner.

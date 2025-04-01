@@ -6,7 +6,7 @@ A demonstration of a multi-agent system for creating personalized customer outre
 
 This project showcases the power of multi-agent systems in handling complex business tasks through task decomposition and specialization. The agents in this system include:
 
-1. **Sales Representative** - Researches and profiles potential customers
+1. **Intelligence Analyst** - Researches and profiles potential customers
 2. **Lead Sales Representative** - Creates personalized outreach messages
 3. **Quality Control Specialist** - Evaluates and provides feedback on outreach quality
 

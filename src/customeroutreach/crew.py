@@ -213,9 +213,9 @@ class CustomerOutreach():
 
 	#Agents
 	@agent
-	def sales_rep_agent(self) -> Agent:
+	def intelligence_analyst(self) -> Agent:
 		return Agent(
-			config=self.agents_config['sales_rep_agent'],
+			config=self.agents_config['intelligence_analyst'],
 			allow_delegation=False,
 			verbose=not show_educational_output,
 			callbacks={
@@ -263,7 +263,7 @@ class CustomerOutreach():
 	def lead_profiling_task(self) -> Task:
 		return Task(
 			config=self.tasks_config['lead_profiling_task'],
-			agent=self.sales_rep_agent(),
+			agent=self.intelligence_analyst(),
 			tools=[directory_read_tool, file_read_tool, search_tool],
 			output_file='lead_profile.md'
 		)
@@ -301,7 +301,7 @@ class CustomerOutreach():
 		# To learn how to add knowledge sources to your crew, check out the documentation:
 		# https://docs.crewai.com/concepts/knowledge#what-is-knowledge
 
-		console.print(Panel(f"[bold]Customer Outreach Crew Initialization[/bold]\nSequential Process\nAgents: Sales Rep, Lead Sales Rep, Outreach Quality Agent", 
+		console.print(Panel(f"[bold]Customer Outreach Crew Initialization[/bold]\nSequential Process\nAgents: Intelligence Analyst, Lead Sales Rep, Outreach Quality Agent", 
 					 border_style="green"))
 		
 		return Crew(
@@ -340,7 +340,7 @@ class CustomerOutreach():
 		if show_educational_output:
 			educational_panels = [
 				Panel.fit(
-					"[bold green]Sales Representative Agent[/bold green] is researching the target company.\n\n"
+					"[bold green]Intelligence Analyst Agent[/bold green] is researching the target company.\n\n"
 					"[dim]This agent uses internet search tools and knowledge bases to gather detailed information about "
 					"the company, its challenges, recent news, and potential needs that our solution could address.[/dim]",
 					title="🔍 Research Phase", 
@@ -348,7 +348,7 @@ class CustomerOutreach():
 				),
 				Panel.fit(
 					"[bold blue]Lead Sales Rep Agent[/bold blue] is creating a personalized outreach message.\n\n"
-					"[dim]This agent uses the research from the Sales Rep to craft a compelling, personalized message "
+					"[dim]This agent uses the research from the Intelligence Analyst to craft a compelling, personalized message "
 					"tailored to the decision maker's position and company needs.[/dim]",
 					title="✍️ Content Creation Phase", 
 					border_style="blue"
@@ -396,7 +396,7 @@ class CustomerOutreach():
 						
 						# Get agent name from the task config
 						agent_names = {
-							0: "Sales Representative",
+							0: "Intelligence Analyst",
 							1: "Lead Sales Rep",
 							2: "Quality Control Agent",
 							3: "Lead Sales Rep"
